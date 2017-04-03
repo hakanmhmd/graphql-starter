@@ -7,3 +7,16 @@
 2. Run the GraphQL server
 
 ``` nodemon ```
+
+3. Go to [http://localhost:3000/graphql](http://localhost:3000/graphql). That is the graphical representation of GraphQL.
+
+4. Type in the query
+
+```
+{
+  user(userId: 1) {
+    username
+    rating
+  }
+}
+```
