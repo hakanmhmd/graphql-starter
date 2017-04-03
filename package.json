@@ -1,0 +1,38 @@
+{
+  "name": "graphql-starter",
+  "version": "1.0.0",
+  "description": "GraohQL starterkit for ES2016 and MongoDB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hakanmhmd/graphql-starter.git"
+  },
+  "keywords": [
+    "graphql",
+    "mongodb",
+    "es2016",
+    "webpack",
+    "eslint",
+    "nodemon",
+    "js"
+  ],
+  "author": "Hakan Mehmed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hakanmhmd/graphql-starter/issues"
+  },
+  "homepage": "https://github.com/hakanmhmd/graphql-starter#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.4",
+    "graphql": "^0.9.2",
+    "mongodb": "^2.2.25"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
