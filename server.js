@@ -10,19 +10,23 @@ const assert = require('assert');
 const mConfig = require('./config/mongodb')[env];
 
 
-MongoClient.connect(mConfig.url, (err, mPool) => {
+MongoClient.connect(mConfig.url, (err, mdb) => {
     assert.equal(err, null);
 
     app.use('/graphql', (req, res) => {
         graphqlHTTP({
             graphiql: true,
-            schema: Schema
+            schema: Schema,
+            context: { mdb }
         })(req, res);
     });
 
+    
     app.listen(port, () => {
         console.log(`Listening on ${port} port ...`)
     });
+
+    
 });
 
 
